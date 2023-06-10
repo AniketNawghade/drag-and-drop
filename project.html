@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="./project.css">
+</head>
+
+<body>
+  <div class="container" id="container1"  ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="item" draggable="true" ondragstart="drag(event)" data-text="Item 1">Item 1</div>
+    <div class="item" draggable="true" ondragstart="drag(event)" data-text="Item 2">Item 2</div>
+    <div class="item" draggable="true" ondragstart="drag(event)" data-text="Item 3">Item 3</div>
+  </div>
+  
+  <div class="container" id="container2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  
+  <div id="message"></div>
+  
+  <button onclick="resetContainers()">Reset</button>
+
+  <script src="./project.js">
+   
+  </script>
+</body>
+</html>
